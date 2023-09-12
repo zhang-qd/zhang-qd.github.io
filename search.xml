@@ -6,6 +6,7 @@
     <content><![CDATA[<blockquote>
 <p>Github Pages 是 github 提供的免费静态博客平台，使用 hexo 静态博客 + NexT 主题能够快速地搭建优雅的博客。在此记录下搭建博客的过程。</p>
 </blockquote>
+<span id="more"></span>
 <h2 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h2><ol>
 <li>首先在<a href="https://github.com/">github</a>中创建一个仓库，命名为<code>&lt;your_name&gt;.github.io</code></li>
 <li>在本机安装好git、ssh、node、hexo，创建博客文件夹，安装需要的插件 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g # 安装hexo</span><br><span class="line">hexo init blog_folder</span><br><span class="line">cd blog_folder</span><br><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save # hexo的git插件</span><br></pre></td></tr></table></figure></li>

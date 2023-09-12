@@ -2607,3 +2607,9 @@ header.header {
     padding: 10px 12px;
   }
 }
+.post-toc .nav .nav-child {
+  display: block;
+}
+.post-toc ol {
+  font-size: 13px;
+}

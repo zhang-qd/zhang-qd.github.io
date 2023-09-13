@@ -156,4 +156,27 @@
         <tag>OpenFOAM</tag>
       </tags>
   </entry>
+  <entry>
+    <title>常用文件</title>
+    <url>/2023/09/13/%E5%B8%B8%E7%94%A8%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Sorry, the password is incorrect! Please try again." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="d9b35fceab14b451d8ffb655fd77eb4109a702a5f6f952a8583561e65f8ba906">517bb76ea955ce0930304e47a133ff7862ea64b2feb79ac33d6b3e179ea730012219a7d40f170574ec77976ce0458da00ff65c47e112e9ac524cbc97764c3f0b478ac810561a12998cfec2111a6266d7461d12923b9a026d1cc96997755acaa9bd82c5c2484a0d4252a555205e261a92e7adb656309a222173e49154e4b84c102cd8eebea4b38d183e08dbd27ce378761f24b0d4829b7fcd7a1c2d4997ee7df788c5e0f6dd7134608b9a3fee164820c70bd0fbfd40c6bcecee5629c7b32103b4ab96d1688aefe80302d3b0a05c9e9ece064a038e9a0b69dbed2e08e6af68ff8d6334bf4df3f82113adab39de8b9058f1217c9c0f5a4f7dc0547b205e8f86f6f14692c015da27a6ce1a31daf185554e995f1235b9990b1d0fc49b7e3471b6acac490a75baa87d49be6b1d68c8f882c2189c2ec2fc204c083ec5b63070cc0538fc1ca82a052b5853acc44035cf7438e76b92a8cfa423452552a0862435a8e6aab10a36020c565e7116f184b75e95acd8b6d679a9059297e736a71514e21bc5f237e6eb77052fc752522fffd1cdd9d41420bff9c8d5acbba5548a1e4a27ccd2619c696876b8bb00b443ea308019b34d7f513ccde4c5c59c612ec08e6bdf526449f2495c025f9fdbf7a75dc5cf0b117a95a0cddc1f8e783c4c39cd5da9362dec756d69d5e771b26d6197e8f397ff701612bd88a3b3123a091d0fa975117faad87d8fb4131c0f287db5c854e4c5245b4b6d148fab734b5a336d77756f2dc7f718ad57f37f3c154137fee483b6ac6e8d1160a9d3f8d1bee4c7402e433eb052f25a0a74633a0e0b2c261b3963291db244e5ab1badbd3e1553cd608dc65307e3c9cacd5013a01775782d8cbb68678896481ac74f061d2eb14e960d8568998580787b6b930259e35f7d3c17e6ee6666f9df8c49286b52295f6be794e8918a8f21dbbb342c26b0fa0e40361757a08996765c522ae65ecaedc949697c4da63fc4e9293bd4d13f38e84ce807949e7c61356096365a8bd0e19619895ea14ba74c839425a58ca47ade558e762bd6beb5eb96533a115f1df1c7346147937b8bb5cd315954d67cf4</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Please input the password</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>private</tag>
+      </tags>
+  </entry>
 </search>

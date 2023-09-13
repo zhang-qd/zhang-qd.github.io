@@ -39,8 +39,15 @@
 
 <h2 id="生成网页"><a href="#生成网页" class="headerlink" title="生成网页"></a>生成网页</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean # 清楚缓存</span><br><span class="line">hexo g # 生成网页</span><br><span class="line">hexo d # 发布到github等</span><br><span class="line">hexo s # 本地查看</span><br></pre></td></tr></table></figure>
 
+<h2 id="博文加密"><a href="#博文加密" class="headerlink" title="博文加密"></a>博文加密</h2><ol>
+<li>安装插件  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-blog-encrypt</span><br></pre></td></tr></table></figure></li>
+<li>在<code>_config.yml</code>文件中添加以下内容  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">encrypt:</span><br><span class="line">  enable: true</span><br><span class="line">  silent: true # 不输出log信息</span><br><span class="line">  theme: xray # 主题</span><br><span class="line">  tags:</span><br><span class="line">  - &#123;name: xxx, password: xxxx&#125; # 当文章指定了xxx标签后，文章自动加密，密码为xxxx</span><br><span class="line">  abstract: There&#x27;s something hidden here.</span><br><span class="line">  message: Please input the password</span><br><span class="line">  wrong_pass_message: Sorry, the password is incorrect! Please try again.</span><br></pre></td></tr></table></figure></li>
+<li>修改<code>scaffolds/post.md</code>文件  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">updated: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags: </span><br><span class="line">categories: </span><br><span class="line">password: </span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
+<li>修改<code>themes/next/layout/_macro/sidebar.njk</code>文件（目录问题）  <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">&#123;%- if (page.encrypt) %&#125;</span><br><span class="line">  &#123;%- set toc = toc(page.origin, &#123; class: &#x27;nav&#x27;, list_number: page.toc.number, max_depth: page.toc.max_depth &#125;) %&#125;</span><br><span class="line">&#123;%- else %&#125;</span><br><span class="line">  &#123;%- set toc = toc(page.content, &#123; class: &#x27;nav&#x27;, list_number: page.toc.number, max_depth: page.toc.max_depth &#125;) %&#125; # 搜索这一行的内容，替换为这一段即可</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
 <h2 id="主要参考连接"><a href="#主要参考连接" class="headerlink" title="主要参考连接"></a>主要参考连接</h2><ol>
 <li><a href="https://theme-next.js.org/docs/">NexT主题官方文档</a></li>
+<li><a href="https://www.itfanr.cc/2021/04/16/hexo-blog-article-encryption/">Hexo博客加密</a></li>
 </ol>
 ]]></content>
       <categories>

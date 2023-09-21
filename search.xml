@@ -179,4 +179,27 @@
         <tag>private</tag>
       </tags>
   </entry>
+  <entry>
+    <title>时间记录</title>
+    <url>/2023/09/21/%E6%97%B6%E9%97%B4%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Sorry, the password is incorrect! Please try again." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="8f295a85b8a6b1da4fa615a0fa40bc4af1beb5abb2e5e04a7188ffb63855c896">afa383dd9f0877404a4bf59bf687fb98a8934981e238cd3b56d355daac35775c8b0a1e206f216008415990479f142500299f0e6e2adc421f9fa8df4e9301c0777e83db503b8b76c4e14955a056906c183bc2b9f8022eb42f0bd0fc17f75fa558af7b7e08ef21a3c5d45fbee793b432d1dd4eb364d80ca23bac213e37d2751676c55a8282774ddd5ba241d3f87c91016c1af1b311c63823127847103b6850eaecd29a83a238e16a196ad726897355024d54b45c1c807a40914de820298b602fbb4eef9e37d39071bf99b31fcd71567ea52e3196f6ba02b6ad7b91a3cf18aee40765a888b827005602d86f4bd65ed9567b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Please input the password</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>private</tag>
+      </tags>
+  </entry>
 </search>

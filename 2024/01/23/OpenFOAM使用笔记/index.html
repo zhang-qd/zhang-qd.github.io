@@ -19,23 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"zhang-qd.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.18.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Qingdian Zhang&#39;s Blog">
-<meta property="og:url" content="https://zhang-qd.github.io/tags/private/index.html">
+    <meta name="description" content="气体常数计算宏观方法中，完全气体满足关系$$p &#x3D; \rho R T,$$其中$R$的计算公式为$$R &#x3D; \frac{R_g}{M},$$$R_g &#x3D; 8.31446261815324 J&#x2F;(K \cdot mol)$，$M$为气体的摩尔质量（单位一般为$g&#x2F;mol$）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OpenFOAM使用笔记">
+<meta property="og:url" content="https://zhang-qd.github.io/2024/01/23/OpenFOAM%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Qingdian Zhang&#39;s Blog">
+<meta property="og:description" content="气体常数计算宏观方法中，完全气体满足关系$$p &#x3D; \rho R T,$$其中$R$的计算公式为$$R &#x3D; \frac{R_g}{M},$$$R_g &#x3D; 8.31446261815324 J&#x2F;(K \cdot mol)$，$M$为气体的摩尔质量（单位一般为$g&#x2F;mol$）。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-01-23T07:47:37.000Z">
+<meta property="article:modified_time" content="2024-01-23T07:47:37.000Z">
 <meta property="article:author" content="Qingdian Zhang">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://zhang-qd.github.io/tags/private/">
+<link rel="canonical" href="https://zhang-qd.github.io/2024/01/23/OpenFOAM%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/private/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://zhang-qd.github.io/2024/01/23/OpenFOAM%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/","path":"2024/01/23/OpenFOAM使用笔记/","title":"OpenFOAM使用笔记"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: private | Qingdian Zhang's Blog</title>
+<title>OpenFOAM使用笔记 | Qingdian Zhang's Blog</title>
   
 
 
@@ -121,7 +125,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -134,6 +138,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B0%94%E4%BD%93%E5%B8%B8%E6%95%B0%E8%AE%A1%E7%AE%97"><span class="nav-number">1.</span> <span class="nav-text">气体常数计算</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -188,90 +193,118 @@
 
     </div>
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">private
-          <small>标签</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zhang-qd.github.io/2024/01/23/OpenFOAM%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Qingdian Zhang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Qingdian Zhang's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="OpenFOAM使用笔记 | Qingdian Zhang's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          OpenFOAM使用笔记
         </h1>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-01-23 15:47:37" itemprop="dateCreated datePublished" datetime="2024-01-23T15:47:37+08:00">2024-01-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-01-23 15:47:37" itemprop="dateModified" datetime="2024-01-23T15:47:37+08:00">2024-01-23</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>59</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="气体常数计算"><a href="#气体常数计算" class="headerlink" title="气体常数计算"></a>气体常数计算</h2><p>宏观方法中，完全气体满足关系$$p &#x3D; \rho R T,$$<br>其中$R$的计算公式为$$R &#x3D; \frac{R_g}{M},$$<br>$R_g &#x3D; 8.31446261815324 J&#x2F;(K \cdot mol)$，$M$为气体的摩尔质量（单位一般为$g&#x2F;mol$）。</p>
+<span id="more"></span>
+
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-10-04T08:54:17+08:00"
-              content="2023-10-04">
-          10-04
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/10/04/%E5%8D%9A%E5%A3%AB%E8%A7%84%E5%88%92/" itemprop="url">
-          <span itemprop="name">博士规划</span>
-        </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/12/18/LaTeX%E8%AE%B0%E5%BD%95/" rel="prev" title="LaTeX记录">
+                  <i class="fa fa-angle-left"></i> LaTeX记录
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-09-21T08:33:24+08:00"
-              content="2023-09-21">
-          09-21
-        </time>
-      </div>
 
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/09/21/%E6%97%B6%E9%97%B4%E8%AE%B0%E5%BD%95/" itemprop="url">
-          <span itemprop="name">时间记录</span>
-        </a>
-      </div>
 
-      
-    </header>
-  </article>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2023-09-13T09:37:45+08:00"
-              content="2023-09-13">
-          09-13
-        </time>
-      </div>
 
-      <div class="post-title">
-        <a class="post-title-link" href="/2023/09/13/%E5%B8%B8%E7%94%A8%E6%96%87%E4%BB%B6/" itemprop="url">
-          <span itemprop="name">常用文件</span>
-        </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-    </div>
-  </div>
-  
-  
-  
 
 </div>
   </main>
